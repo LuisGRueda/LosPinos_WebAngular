@@ -1,0 +1,66 @@
+<div id="inicio" class="contenedor">
+    <div class="ttl">
+        <h1>Contactenos</h1>
+        <h3>Cada pregunta merece una respuesta</h3>
+    </div>
+   
+</div>
+<div id="contact" class="contenedor">
+     <div class="txtcontacto">
+        <h1>¡Permítanos saber de usted!</h1>
+         <p>¿Quieres conocer mas a profundidad todos los recorrido?<br>
+        ¿O ya mismo podemos realizar la reserva de un tour?<br><br>
+        Ven no lo pienses mas, conoce al el corazon de latinoamerica, Bolivia espera por ti.
+        </p>
+    </div>
+    <div class="formcontacto">
+        <form id="formulario" ngNativeValidate [formGroup]="formularioContacto" (ngSubmit)="enviarDatos()">
+            <div class="nombre">
+                <div class="invisible input">
+                    <label for="id">Nombre</label>
+                    <input formControlName="id"  type="text" id="id" value="0">
+                </div>
+                <div class="input">
+                    <label for="name">Nombre</label>
+                    <input formControlName="nombre"  type="text" id="name" required>
+                </div>
+                <div class="input">
+                    <label for="lastname">Apellido</label>
+                    <input formControlName="apellido" type="text" id="lastname" required>
+                </div>
+            </div>  
+            <div class="input">
+                <label for="email">Email</label>
+                <input formControlName="correo" type="email" id="email" required>
+            </div>
+            <div class="input">
+                <label for="number">Telefono</label>
+                <input formControlName="telefono" type="number" id="number" required >
+            </div>
+            <div class="input">
+                <label for="msg">Mensaje</label>
+                <textarea formControlName="mensaje" type="text" id="msg" cols="30" rows="10" required></textarea>
+            </div>
+            <div class="input">
+                <button class="btnenviar" type="submit" >ENVIAR</button>
+            </div>
+            
+        </form>
+    </div>
+</div>
+<div id="direccion" class="contenedor">
+    <div id="ubicacion">
+        <h1>Ubicación</h1>
+        <div class="text">
+            <p>Plaza Luis De Fuentes y Vargas</p><br>
+            <p>Tarija - Bolivia</p>
+        </div>
+        <a href="https://wa.me//+59162852030">https://wa.me//+59162852030</a>
+    </div>
+    <div id="mapa">
+        <div class="tam">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4954.00374418211!2d-64.73354462165712!3d-21.534754724430478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8b81e8bf0cc16e3e!2sPlaza%20Principal%20Luis%20De%20Fuentes%20y%20Vargas!5e0!3m2!1ses-419!2sbo!4v1643171164214!5m2!1ses-419!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+   
+    </div>
+</div>

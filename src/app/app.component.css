@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2? familia=Montserrat:wght@100&display=swap');
+body {
+    background-color: #fff;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;    
+    margin : 0;
+    font-family: 'Montserrat', sans-serif;
+
+}
+header{
+    width: 100%;
+    height: 113px;
+    display: flex;
+}
+#barra{
+    z-index: 3;
+    height: 115px;
+    background: rgba(255, 255, 255, 0.521);
+    left: 0;
+    margin-left: 0;
+    width: 100%;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    transition: all 0.5s ease;
+    padding-left: 15%;
+}
+#navcontenido{
+    display: flex;
+    padding: 10px;
+    font-size: 12px;
+}
+#logo{
+    width: 25%;
+    padding: 10px;
+    overflow: hidden;
+    margin-right: 10%;
+}
+#logo img{
+    width: 100%;
+}
+#paginas{
+    width: 50%;
+    display: flex;
+    padding: 20px;
+    margin: auto;
+    position: static;
+    transform: translateX(0%);
+}
+.botonpagina{
+    margin-right: 10px;
+
+}
+.botonpagina a{
+    text-decoration: none;
+    color: #6e6e6e96;
+}
+.botonpagina a:hover{
+    color:#021bfc ;
+}
+.icono{
+    position: fixed;
+    z-index: 1000;
+    top: 25px;
+    right: 25px;
+    width: 45px;
+    height: 45px;
+    transition: all .2s;
+    font-size: 36px;
+    display: none;
+}
+.icono i{
+    margin: auto;
+   font-size: 38px;
+}
+@media(max-width:820px){
+    #barra{
+        padding-left: 0%;
+        width: 100%;
+    }
+    #logo{
+        margin-right: 0;   
+    }
+    #paginas{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        text-align: left;
+        background: #ffffff;
+        margin-top: 105px;
+        transition: all 0.5s;
+        transform: translateX(100%);
+        left: 0;
+    }
+    .icono{
+        display: block;
+        transition: all .2s;
+    }
+    .botonpagina{
+        padding: 2%;
+        text-align: center; 
+        margin-right: 0; 
+        margin-bottom: 15px;
+    }
+    .botonpagina a{
+        width: 100%;
+        font-family: 'Montserrat', sans-serif;
+        text-decoration: none;
+        color: #000;
+        font-size: 18px;
+    }
+    
+}
+@media(max-width:620px){
+
+    #logo{
+        margin-right: 0;
+        width: 40%;
+    }
+    #barra{
+        height: 100px;
+        
+    }
+    #paginas{
+        margin-top: 90px;
+    }
+   
+}
+@media(max-width:420px){
+
+    #logo{
+        margin-right: 0;
+        width: 50%;
+    }
+    #barra{
+        height: 85px;
+        
+    }
+    header{
+        height: 95px;
+    }
+    #paginas{
+        margin-top: 75px;
+    }
+    .botonpagina a{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+    }
+   
+}
+
+
+
+
+
+footer{
+    height: 175px;
+    background: #000;
+    width: 100%;
+}
+.contenedorfooter{
+    width: auto;
+    height: 100%;
+    padding-left: 10%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.logofooter{
+    width: 15%;
+}
+.logofooter img{
+    width: 100%;
+}
+.copy{
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    color: white;
+    width: 60%;
+    overflow: hidden;
+    font-size: 12px;
+}
+.social{
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    color: white;
+    width: 15%;
+}
+.social .fab{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+    color: #000;
+    background: white;
+    margin-right: 15px;
+    cursor: pointer;
+}

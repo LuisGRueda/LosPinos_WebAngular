@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+<body>
+  <header >
+    <div tabindex="-1" id="barra">
+      <div id="navcontenido">
+        <div id="logo">
+          <img src="https://i.ibb.co/wQsqY93/Sin-t-tulo-3.png" alt="">
+        </div>
+        <div id="btnicon" class="icono" ><i class="fas fa-bars"></i></div>
+        <div id="paginas">
+          <div class="botonpagina">
+            <a href="./home">INICIO</a>
+          </div>
+          <div class="botonpagina">
+            <a href="./about">ACERCA DE</a>
+          </div>
+          <div class="botonpagina">
+            <a href="./packages/">PAQUETES</a>
+          </div>
+          <div class="botonpagina">
+            <a href="./gallery/">GALERIA</a>
+          </div>
+          <div class="botonpagina">
+            <a href="./contact/">CONTACTO</a>
+          </div>
+        </div>       
+      </div>
+    </div>  
+ </header>
+ <div>
+  <router-outlet></router-outlet>
+ </div>
+ <footer>
+   <div class="contenedorfooter">
+      <div class="logofooter">
+        <img src="https://i.ibb.co/nrKfJpM/tour2.png" alt="">
+     </div>
+     <div class="copy">
+       2022 LOS PINOS® - TODOS LOS DERECHOS RESERVADOS
+     </div>
+     <div class="social">
+        <i class="fab fa-facebook-f iconF"></i>
+        <i class="fab fa-twitter iconT"></i>
+        <i class="fab fa-instagram iconI"></i>
+     </div>
+   </div>
+ </footer>
+</body>
+</html>

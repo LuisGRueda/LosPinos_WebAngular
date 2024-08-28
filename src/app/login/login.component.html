@@ -1,0 +1,15 @@
+<div class="contenedor">
+    <div class="cont-login">
+        <div class="login-box">
+            <img src="https://th.bing.com/th/id/OIP.130JlLu_GSzrXkjgW3swqAHaHa?pid=ImgDet&rs=1" class="avatar" alt="Avatar Image">
+            <h1>Iniciar Sesion</h1>
+            <form  (ngSubmit)="enviarDatos()">
+              <label for="username">Username</label>
+              <input  [(ngModel)]="model.usuario" name="usuario" id="username" type="text" placeholder="Ingrese Usuario">
+              <label for="password">Password</label>
+              <input   name="contrasenia" id="password" type="password" placeholder="Ingrese Contraseña">
+              <input type="submit" role="button">
+            </form>
+          </div>
+    </div>
+</div>
